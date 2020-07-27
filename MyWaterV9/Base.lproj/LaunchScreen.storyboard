@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +13,58 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenWater" translatesAutoresizingMaskIntoConstraints="NO" id="LWE-Wg-Vdj">
+                                <rect key="frame" x="0.0" y="348" width="414" height="200"/>
+                                <color key="tintColor" name="Water Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="TDm-hb-VQw"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vr-c2-piU">
+                                <rect key="frame" x="0.0" y="548" width="414" height="348"/>
+                                <color key="backgroundColor" name="Water Color"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hydrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynq-Cm-sJm">
+                                <rect key="frame" x="146" y="169" width="122.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" name="Text Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Background Color - MainView"/>
+                        <constraints>
+                            <constraint firstItem="5Vr-c2-piU" firstAttribute="top" secondItem="LWE-Wg-Vdj" secondAttribute="bottom" id="5re-34-pZo"/>
+                            <constraint firstItem="LWE-Wg-Vdj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FV6-8I-QP3"/>
+                            <constraint firstItem="ynq-Cm-sJm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HkL-Jy-0yh"/>
+                            <constraint firstItem="LWE-Wg-Vdj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LlR-Rw-QlE"/>
+                            <constraint firstAttribute="bottom" secondItem="5Vr-c2-piU" secondAttribute="bottom" id="Qre-Qf-XMI"/>
+                            <constraint firstItem="5Vr-c2-piU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Z84-Ca-Ke1"/>
+                            <constraint firstItem="5Vr-c2-piU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rQQ-b5-N8p"/>
+                            <constraint firstItem="LWE-Wg-Vdj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rn6-Dk-oUZ"/>
+                            <constraint firstItem="LWE-Wg-Vdj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vbU-is-8Zq"/>
+                            <constraint firstItem="ynq-Cm-sJm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="yTu-wB-Mh8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchScreenWater" width="1024" height="1024"/>
+        <namedColor name="Background Color - MainView">
+            <color red="0.95300000905990601" green="0.97600001096725464" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Color">
+            <color red="0.52899998426437378" green="0.75300002098083496" blue="0.80400002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Water Color">
+            <color red="0.69800001382827759" green="0.98799997568130493" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

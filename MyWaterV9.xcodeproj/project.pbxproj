@@ -3,33 +3,152 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41D5D1037D10724D2BD30B88 /* Pods_MyWaterV9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32ECD9B76831515D359BAE /* Pods_MyWaterV9.framework */; };
+		9509BDE624B94E1500B4B088 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9509BDE524B94E1500B4B088 /* HealthKit.framework */; };
 		9534460A24B1B1B7009B06A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534460924B1B1B7009B06A7 /* AppDelegate.swift */; };
 		9534460C24B1B1B7009B06A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534460B24B1B1B7009B06A7 /* SceneDelegate.swift */; };
-		9534460E24B1B1B7009B06A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534460D24B1B1B7009B06A7 /* ViewController.swift */; };
+		9534460E24B1B1B7009B06A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534460D24B1B1B7009B06A7 /* HomeViewController.swift */; };
 		9534461124B1B1B7009B06A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9534460F24B1B1B7009B06A7 /* Main.storyboard */; };
 		9534461424B1B1B7009B06A7 /* MyWaterV9.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9534461224B1B1B7009B06A7 /* MyWaterV9.xcdatamodeld */; };
 		9534461624B1B1BC009B06A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9534461524B1B1BC009B06A7 /* Assets.xcassets */; };
 		9534461924B1B1BC009B06A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9534461724B1B1BC009B06A7 /* LaunchScreen.storyboard */; };
+		9534462224B1B496009B06A7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534462124B1B496009B06A7 /* DataController.swift */; };
+		9534462524B1CE04009B06A7 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534462424B1CE04009B06A7 /* OnBoardingViewController.swift */; };
+		953D3CFB24B2772F00E2CCEE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CFA24B2772F00E2CCEE /* HistoryViewController.swift */; };
+		953D3D0124B2778900E2CCEE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3D0024B2778900E2CCEE /* SettingsViewController.swift */; };
+		953D3D0324B27E9900E2CCEE /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3D0224B27E9900E2CCEE /* DateExtension.swift */; };
+		953D3D0624B2863F00E2CCEE /* BarChartViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3D0524B2863F00E2CCEE /* BarChartViewExtension.swift */; };
+		95561B0724B66745003C31AE /* AddWaterInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95561B0624B66745003C31AE /* AddWaterInterfaceController.swift */; };
+		9564AEFA24B6BF420062FE38 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9564AEF924B6BF420062FE38 /* CloudKit.framework */; };
+		95DDACBC24C6CE1300C3CA08 /* waterButtonSFX.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 95DDACBB24C6CE1300C3CA08 /* waterButtonSFX.aifc */; };
+		95DDACBE24C6D8C000C3CA08 /* waterFillSFX.flac in Resources */ = {isa = PBXBuildFile; fileRef = 95DDACBD24C6D8C000C3CA08 /* waterFillSFX.flac */; };
+		95DE512624BA4F510095286D /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE512524BA4F510095286D /* DateValueFormatter.swift */; };
+		95DE512824BA4F6C0095286D /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE512724BA4F6C0095286D /* DayAxisValueFormatter.swift */; };
+		95E645AF24B44FEA00EA3C86 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E645AD24B44FEA00EA3C86 /* Interface.storyboard */; };
+		95E645B124B44FED00EA3C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E645B024B44FED00EA3C86 /* Assets.xcassets */; };
+		95E645B824B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95E645B724B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95E645BD24B44FED00EA3C86 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E645BC24B44FED00EA3C86 /* InterfaceController.swift */; };
+		95E645BF24B44FED00EA3C86 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E645BE24B44FED00EA3C86 /* ExtensionDelegate.swift */; };
+		95E645C124B44FED00EA3C86 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E645C024B44FED00EA3C86 /* NotificationController.swift */; };
+		95E645C324B44FEE00EA3C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E645C224B44FEE00EA3C86 /* Assets.xcassets */; };
+		95E645C824B44FEE00EA3C86 /* MyWaterAppV9WatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 95E645AB24B44FEA00EA3C86 /* MyWaterAppV9WatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		95E645B924B44FED00EA3C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953445FE24B1B1B7009B06A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95E645B624B44FED00EA3C86;
+			remoteInfo = "MyWaterAppV9WatchOS Extension";
+		};
+		95E645C624B44FEE00EA3C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953445FE24B1B1B7009B06A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95E645AA24B44FEA00EA3C86;
+			remoteInfo = MyWaterAppV9WatchOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9508187124CE4EE30016C8AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958B794024B2E4E0000B9803 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				95E645C824B44FEE00EA3C86 /* MyWaterAppV9WatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E645CB24B44FEE00EA3C86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95E645B824B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		9534460624B1B1B7009B06A7 /* MyWaterV9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWaterV9.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		307FA0EFD0096EDA02340D8D /* Pods-MyWaterV9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWaterV9.release.xcconfig"; path = "Target Support Files/Pods-MyWaterV9/Pods-MyWaterV9.release.xcconfig"; sourceTree = "<group>"; };
+		8D32ECD9B76831515D359BAE /* Pods_MyWaterV9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWaterV9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9509BDE524B94E1500B4B088 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9534460624B1B1B7009B06A7 /* Hydrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9534460924B1B1B7009B06A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9534460B24B1B1B7009B06A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9534460D24B1B1B7009B06A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9534460D24B1B1B7009B06A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9534461024B1B1B7009B06A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9534461324B1B1B7009B06A7 /* MyWaterV9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWaterV9.xcdatamodel; sourceTree = "<group>"; };
 		9534461524B1B1BC009B06A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9534461824B1B1BC009B06A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9534461A24B1B1BC009B06A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9534462124B1B496009B06A7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9534462424B1CE04009B06A7 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		953D3CFA24B2772F00E2CCEE /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		953D3D0024B2778900E2CCEE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		953D3D0224B27E9900E2CCEE /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		953D3D0524B2863F00E2CCEE /* BarChartViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewExtension.swift; sourceTree = "<group>"; };
+		95561B0624B66745003C31AE /* AddWaterInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaterInterfaceController.swift; sourceTree = "<group>"; };
+		9564AEF824B6BF3F0062FE38 /* Hydrate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hydrate.entitlements; sourceTree = "<group>"; };
+		9564AEF924B6BF420062FE38 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		95DDACBB24C6CE1300C3CA08 /* waterButtonSFX.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = waterButtonSFX.aifc; sourceTree = "<group>"; };
+		95DDACBD24C6D8C000C3CA08 /* waterFillSFX.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = waterFillSFX.flac; sourceTree = "<group>"; };
+		95DE512524BA4F510095286D /* DateValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
+		95DE512724BA4F6C0095286D /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
+		95E645AB24B44FEA00EA3C86 /* MyWaterAppV9WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWaterAppV9WatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E645AE24B44FEA00EA3C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		95E645B024B44FED00EA3C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E645B224B44FED00EA3C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E645B724B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyWaterAppV9WatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E645BC24B44FED00EA3C86 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		95E645BE24B44FED00EA3C86 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		95E645C024B44FED00EA3C86 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		95E645C224B44FEE00EA3C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E645C424B44FEE00EA3C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E645C524B44FEE00EA3C86 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E7624CC385231AB9DACF391C /* Pods-MyWaterV9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWaterV9.debug.xcconfig"; path = "Target Support Files/Pods-MyWaterV9/Pods-MyWaterV9.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9534460324B1B1B7009B06A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9509BDE624B94E1500B4B088 /* HealthKit.framework in Frameworks */,
+				41D5D1037D10724D2BD30B88 /* Pods_MyWaterV9.framework in Frameworks */,
+				9564AEFA24B6BF420062FE38 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E645B424B44FED00EA3C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A75BDACF52E16BB4E0A327 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,18 +158,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C935D0829DEA97C25061D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9509BDE524B94E1500B4B088 /* HealthKit.framework */,
+				9564AEF924B6BF420062FE38 /* CloudKit.framework */,
+				8D32ECD9B76831515D359BAE /* Pods_MyWaterV9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		953445FD24B1B1B7009B06A7 = {
 			isa = PBXGroup;
 			children = (
 				9534460824B1B1B7009B06A7 /* MyWaterV9 */,
+				95E645AC24B44FEA00EA3C86 /* MyWaterAppV9WatchOS */,
+				95E645BB24B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension */,
 				9534460724B1B1B7009B06A7 /* Products */,
+				C91EBC9E0BB3D1A595BD423F /* Pods */,
+				1C935D0829DEA97C25061D69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9534460724B1B1B7009B06A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9534460624B1B1B7009B06A7 /* MyWaterV9.app */,
+				9534460624B1B1B7009B06A7 /* Hydrate.app */,
+				95E645AB24B44FEA00EA3C86 /* MyWaterAppV9WatchOS.app */,
+				95E645B724B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +193,12 @@
 		9534460824B1B1B7009B06A7 /* MyWaterV9 */ = {
 			isa = PBXGroup;
 			children = (
+				9564AEF824B6BF3F0062FE38 /* Hydrate.entitlements */,
 				9534460924B1B1B7009B06A7 /* AppDelegate.swift */,
 				9534460B24B1B1B7009B06A7 /* SceneDelegate.swift */,
-				9534460D24B1B1B7009B06A7 /* ViewController.swift */,
+				95DDACB024C6C74900C3CA08 /* SFX */,
+				953D3D0424B2828A00E2CCEE /* Models */,
+				9534462024B1B484009B06A7 /* View Controllers */,
 				9534460F24B1B1B7009B06A7 /* Main.storyboard */,
 				9534461524B1B1BC009B06A7 /* Assets.xcassets */,
 				9534461724B1B1BC009B06A7 /* LaunchScreen.storyboard */,
@@ -70,6 +208,71 @@
 			path = MyWaterV9;
 			sourceTree = "<group>";
 		};
+		9534462024B1B484009B06A7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9534460D24B1B1B7009B06A7 /* HomeViewController.swift */,
+				9534462424B1CE04009B06A7 /* OnBoardingViewController.swift */,
+				953D3CFA24B2772F00E2CCEE /* HistoryViewController.swift */,
+				953D3D0024B2778900E2CCEE /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		953D3D0424B2828A00E2CCEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				953D3D0524B2863F00E2CCEE /* BarChartViewExtension.swift */,
+				9534462124B1B496009B06A7 /* DataController.swift */,
+				953D3D0224B27E9900E2CCEE /* DateExtension.swift */,
+				95DE512524BA4F510095286D /* DateValueFormatter.swift */,
+				95DE512724BA4F6C0095286D /* DayAxisValueFormatter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95DDACB024C6C74900C3CA08 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				95DDACBB24C6CE1300C3CA08 /* waterButtonSFX.aifc */,
+				95DDACBD24C6D8C000C3CA08 /* waterFillSFX.flac */,
+			);
+			path = SFX;
+			sourceTree = "<group>";
+		};
+		95E645AC24B44FEA00EA3C86 /* MyWaterAppV9WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				95E645AD24B44FEA00EA3C86 /* Interface.storyboard */,
+				95E645B024B44FED00EA3C86 /* Assets.xcassets */,
+				95E645B224B44FED00EA3C86 /* Info.plist */,
+			);
+			path = MyWaterAppV9WatchOS;
+			sourceTree = "<group>";
+		};
+		95E645BB24B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				95E645BC24B44FED00EA3C86 /* InterfaceController.swift */,
+				95561B0624B66745003C31AE /* AddWaterInterfaceController.swift */,
+				95E645BE24B44FED00EA3C86 /* ExtensionDelegate.swift */,
+				95E645C024B44FED00EA3C86 /* NotificationController.swift */,
+				95E645C224B44FEE00EA3C86 /* Assets.xcassets */,
+				95E645C424B44FEE00EA3C86 /* Info.plist */,
+				95E645C524B44FEE00EA3C86 /* PushNotificationPayload.apns */,
+			);
+			path = "MyWaterAppV9WatchOS Extension";
+			sourceTree = "<group>";
+		};
+		C91EBC9E0BB3D1A595BD423F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7624CC385231AB9DACF391C /* Pods-MyWaterV9.debug.xcconfig */,
+				307FA0EFD0096EDA02340D8D /* Pods-MyWaterV9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,18 +280,58 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9534461D24B1B1BC009B06A7 /* Build configuration list for PBXNativeTarget "MyWaterV9" */;
 			buildPhases = (
+				8A59260537A9D523656C67C3 /* [CP] Check Pods Manifest.lock */,
 				9534460224B1B1B7009B06A7 /* Sources */,
 				9534460324B1B1B7009B06A7 /* Frameworks */,
 				9534460424B1B1B7009B06A7 /* Resources */,
+				622245FCC3F63BF10997F431 /* [CP] Embed Pods Frameworks */,
+				958B794024B2E4E0000B9803 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95E645C724B44FEE00EA3C86 /* PBXTargetDependency */,
+			);
+			name = MyWaterV9;
+			productName = MyWaterV9;
+			productReference = 9534460624B1B1B7009B06A7 /* Hydrate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95E645AA24B44FEA00EA3C86 /* MyWaterAppV9WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E645CF24B44FEE00EA3C86 /* Build configuration list for PBXNativeTarget "MyWaterAppV9WatchOS" */;
+			buildPhases = (
+				95E645A924B44FEA00EA3C86 /* Resources */,
+				95E645CB24B44FEE00EA3C86 /* Embed App Extensions */,
+				E6A75BDACF52E16BB4E0A327 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95E645BA24B44FED00EA3C86 /* PBXTargetDependency */,
+			);
+			name = MyWaterAppV9WatchOS;
+			productName = MyWaterAppV9WatchOS;
+			productReference = 95E645AB24B44FEA00EA3C86 /* MyWaterAppV9WatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		95E645B624B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E645CE24B44FEE00EA3C86 /* Build configuration list for PBXNativeTarget "MyWaterAppV9WatchOS Extension" */;
+			buildPhases = (
+				95E645B324B44FED00EA3C86 /* Sources */,
+				95E645B424B44FED00EA3C86 /* Frameworks */,
+				95E645B524B44FED00EA3C86 /* Resources */,
+				9508187124CE4EE30016C8AA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyWaterV9;
-			productName = MyWaterV9;
-			productReference = 9534460624B1B1B7009B06A7 /* MyWaterV9.app */;
-			productType = "com.apple.product-type.application";
+			name = "MyWaterAppV9WatchOS Extension";
+			productName = "MyWaterAppV9WatchOS Extension";
+			productReference = 95E645B724B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,11 +339,17 @@
 		953445FE24B1B1B7009B06A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Charlie Nguyen";
 				TargetAttributes = {
 					9534460524B1B1B7009B06A7 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					95E645AA24B44FEA00EA3C86 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					95E645B624B44FED00EA3C86 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -119,6 +368,8 @@
 			projectRoot = "";
 			targets = (
 				9534460524B1B1B7009B06A7 /* MyWaterV9 */,
+				95E645AA24B44FEA00EA3C86 /* MyWaterAppV9WatchOS */,
+				95E645B624B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,27 +379,120 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DDACBC24C6CE1300C3CA08 /* waterButtonSFX.aifc in Resources */,
 				9534461924B1B1BC009B06A7 /* LaunchScreen.storyboard in Resources */,
+				95DDACBE24C6D8C000C3CA08 /* waterFillSFX.flac in Resources */,
 				9534461624B1B1BC009B06A7 /* Assets.xcassets in Resources */,
 				9534461124B1B1B7009B06A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95E645A924B44FEA00EA3C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E645B124B44FED00EA3C86 /* Assets.xcassets in Resources */,
+				95E645AF24B44FEA00EA3C86 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E645B524B44FED00EA3C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E645C324B44FEE00EA3C86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		622245FCC3F63BF10997F431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWaterV9/Pods-MyWaterV9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWaterV9/Pods-MyWaterV9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWaterV9/Pods-MyWaterV9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A59260537A9D523656C67C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWaterV9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9534460224B1B1B7009B06A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9534460E24B1B1B7009B06A7 /* ViewController.swift in Sources */,
+				9534462224B1B496009B06A7 /* DataController.swift in Sources */,
+				9534460E24B1B1B7009B06A7 /* HomeViewController.swift in Sources */,
 				9534460A24B1B1B7009B06A7 /* AppDelegate.swift in Sources */,
+				95DE512624BA4F510095286D /* DateValueFormatter.swift in Sources */,
+				9534462524B1CE04009B06A7 /* OnBoardingViewController.swift in Sources */,
+				953D3D0324B27E9900E2CCEE /* DateExtension.swift in Sources */,
+				953D3D0624B2863F00E2CCEE /* BarChartViewExtension.swift in Sources */,
 				9534461424B1B1B7009B06A7 /* MyWaterV9.xcdatamodeld in Sources */,
+				953D3CFB24B2772F00E2CCEE /* HistoryViewController.swift in Sources */,
 				9534460C24B1B1B7009B06A7 /* SceneDelegate.swift in Sources */,
+				95DE512824BA4F6C0095286D /* DayAxisValueFormatter.swift in Sources */,
+				953D3D0124B2778900E2CCEE /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E645B324B44FED00EA3C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E645C124B44FED00EA3C86 /* NotificationController.swift in Sources */,
+				95E645BF24B44FED00EA3C86 /* ExtensionDelegate.swift in Sources */,
+				95E645BD24B44FED00EA3C86 /* InterfaceController.swift in Sources */,
+				95561B0724B66745003C31AE /* AddWaterInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95E645BA24B44FED00EA3C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95E645B624B44FED00EA3C86 /* MyWaterAppV9WatchOS Extension */;
+			targetProxy = 95E645B924B44FED00EA3C86 /* PBXContainerItemProxy */;
+		};
+		95E645C724B44FEE00EA3C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95E645AA24B44FEA00EA3C86 /* MyWaterAppV9WatchOS */;
+			targetProxy = 95E645C624B44FEE00EA3C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9534460F24B1B1B7009B06A7 /* Main.storyboard */ = {
@@ -165,6 +509,14 @@
 				9534461824B1B1BC009B06A7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		95E645AD24B44FEA00EA3C86 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E645AE24B44FEA00EA3C86 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,17 +638,23 @@
 		};
 		9534461E24B1B1BC009B06A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7624CC385231AB9DACF391C /* Pods-MyWaterV9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyWaterV9/Hydrate.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = G4Y6JX4MG6;
 				INFOPLIST_FILE = MyWaterV9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HydrophilicDesigns.MyWaterV9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hydrate;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,19 +662,107 @@
 		};
 		9534461F24B1B1BC009B06A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307FA0EFD0096EDA02340D8D /* Pods-MyWaterV9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyWaterV9/Hydrate.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = G4Y6JX4MG6;
 				INFOPLIST_FILE = MyWaterV9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HydrophilicDesigns.MyWaterV9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hydrate;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95E645C924B44FEE00EA3C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4Y6JX4MG6;
+				IBSC_MODULE = MyWaterAppV9WatchOS_Extension;
+				INFOPLIST_FILE = MyWaterAppV9WatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HydrophilicDesigns.MyWaterV9.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		95E645CA24B44FEE00EA3C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4Y6JX4MG6;
+				IBSC_MODULE = MyWaterAppV9WatchOS_Extension;
+				INFOPLIST_FILE = MyWaterAppV9WatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HydrophilicDesigns.MyWaterV9.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		95E645CC24B44FEE00EA3C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4Y6JX4MG6;
+				INFOPLIST_FILE = "MyWaterAppV9WatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HydrophilicDesigns.MyWaterV9.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		95E645CD24B44FEE00EA3C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4Y6JX4MG6;
+				INFOPLIST_FILE = "MyWaterAppV9WatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HydrophilicDesigns.MyWaterV9.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Release;
 		};
@@ -337,6 +783,24 @@
 			buildConfigurations = (
 				9534461E24B1B1BC009B06A7 /* Debug */,
 				9534461F24B1B1BC009B06A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E645CE24B44FEE00EA3C86 /* Build configuration list for PBXNativeTarget "MyWaterAppV9WatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E645CC24B44FEE00EA3C86 /* Debug */,
+				95E645CD24B44FEE00EA3C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E645CF24B44FEE00EA3C86 /* Build configuration list for PBXNativeTarget "MyWaterAppV9WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E645C924B44FEE00EA3C86 /* Debug */,
+				95E645CA24B44FEE00EA3C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
